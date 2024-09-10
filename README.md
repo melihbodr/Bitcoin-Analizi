@@ -1,4 +1,37 @@
-# Bitcoin Analysis with Deep Learning
-Python  Bitcoin is widely used cryptocurrency for digital market. It is decentralised that means it is not own by government or any other company.Transactions are simple and easy as it doesn’t belong to any country.Records data are stored in Blockchain.Bitcoin price is variable and it is widely used so it is important to predict the price of it for making any investment.This project focuses on the accurate prediction of cryptocurrencies price using neural networks. We’re implementing a Long Short Term Memory (LSTM) model using keras; it’s a particular type of deep learning model that is well suited to time series data (or any data with temporal/spatial/structural order e.g. movies, sentences, etc.).We have used different activation function for analysing the efficiency of the system.Instead of historical data we are using live streaming data for better accuracy.
+# Bitcoin Price Prediction with LSTM
 
-In this video, I used the opening values between 2011 and 19/04/2021. I carried out the project on the last opening day and at the end of the project, the next day (April 20) bitcoin opening rate was estimated with the future forecast method. This project is not investment advice. In this project, I wanted to show my work in time series on a topic that has become popular recently.
+## Overview
+
+This project demonstrates the use of Long Short-Term Memory (LSTM) networks for predicting Bitcoin prices. Using historical price data, the model forecasts future values, providing insights for potential investment decisions.
+
+## Features
+
+- **Time Series Forecasting**: Utilizes LSTM, a type of recurrent neural network, to handle time series data effectively.
+- **Data Preprocessing**: Includes normalization and preparation of data for training and testing.
+- **Visualization**: Displays predicted vs. actual Bitcoin prices through informative plots.
+
+## Setup
+
+1. **Install Dependencies**:
+   - TensorFlow
+   - NumPy
+   - Pandas
+   - Matplotlib
+   - Scikit-learn
+
+   You can install these libraries via pip:
+
+   ```bash
+   pip install tensorflow numpy pandas matplotlib scikit-learn
+2. **Data**:
+The project requires historical Bitcoin price data in an Excel file. Ensure that the data file (BTC2.xlsx) is properly formatted and accessible.
+
+## Usage
+
+**Data Preparation**: Load and preprocess historical Bitcoin price data.
+**Model Training**: Train the LSTM model using historical data.
+**Prediction**: Use the trained model to predict future Bitcoin prices.
+**Visualization**: Compare predicted prices with actual prices through plots.
+
+## Results
+The model provides predictions for future Bitcoin prices and visualizations to compare these predictions with actual historical data. Performance metrics such as the R-squared score are used to evaluate the model's accuracy.
